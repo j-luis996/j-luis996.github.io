@@ -1,6 +1,6 @@
 <?php
 // Check if the form was submitted
-if($_SERVER["REQUEST_METHOD"] == "POST"){
+//if($_SERVER["REQUEST_METHOD"] == "POST"){
     // Check if file was uploaded without errors
     if(isset($_FILES["photo"]) && $_FILES["photo"]["error"] == 0){
         $allowed = array("jpg" => "image/jpg", "jpeg" => "image/jpeg", "gif" => "image/gif", "png" => "image/png");
@@ -22,7 +22,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             if(file_exists("upload/" . $filename)){
                 echo $filename . " is already exists.";
             } else{
-                move_uploaded_file($_FILES["photo"]["tmp_name"], "upload/" . $filename);
+                //move_uploaded_file($_FILES["photo"]["tmp_name"], "upload/" . $filename);
                 echo "Your file was uploaded successfully.";
             } 
         } else{
@@ -31,8 +31,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     } else{
         echo "Error: " . $_FILES["photo"]["error"];
     }
-}
+/*}
 else{
     echo "el server no permite post"
-}
+}*/
 ?>
