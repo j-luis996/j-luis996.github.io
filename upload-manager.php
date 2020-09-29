@@ -32,4 +32,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         echo "Error: " . $_FILES["photo"]["error"];
     }
 }
+else{
+    echo "el server no permite post"
+}
 ?>
