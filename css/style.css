@@ -1,25 +1,32 @@
 body{
     background: #555a70;
+    margin: 0;
+    padding: 0;
 }
+/* estilos del header */
 nav{
     background-color: #13a4a4;
     border-radius: 5px;
+    margin: 0;
+    padding: 0;
 }
 nav #main-img{
-    width: 50px;
+    width: 48px;
     margin-top: 10px;
+    margin-left: 20px;
 }
 .main-nav{
-    margin-top: 10px; 
     list-style: none;
-    padding-left: 60em;
+    padding-left: 55em;
     display: inline-block;
+    font-size: 18px;
 }
 .main-nav__item{
     display: inline-block;
     padding-left: 20px;
 }
 .main-nav__item a{
+    padding: 0px 10px;
    color: white;
    text-decoration: none;
 }
@@ -32,5 +39,5 @@ nav #main-img{
 }
 .main-nav__item a::after{
     padding-left: 20px;
-    content: " | ";
+    content: "  ";
 }
