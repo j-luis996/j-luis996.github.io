@@ -66,6 +66,7 @@ body{
     -centrar el elemento*/
     min-height:450px;
     border: 0.25rem solid grey;
+    margin: 0 auto;
     padding:  0.2rem 0.35rem;
     font-size: 1.7rem;
     background-color: white;
