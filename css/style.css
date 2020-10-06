@@ -57,14 +57,45 @@ body{
     content: " | ";
 }
 /************************ estilos del main **************************/
-main{
-    width: 70%;
+.main{
+    /* width: 70%;
     min-height: 500px;
+    margin: 0 auto; estas lineas sirven para:
+    -definir el tamaño en el 70% de la pagina
+    -limitar el tamaño minimo a 500px
+    -centrar el elemento*/
+    min-height:450px;
     border: 0.25rem solid grey;
-    margin: 0 auto;
     padding:  0.2rem 0.35rem;
     font-size: 1.7rem;
-    background-color: rgb(230, 243, 241);
+    background-color: white;
+}
+.main__aside {
+    background-color: rgb(203, 233, 230);
+    display: inline-block;
+    min-height: 450px;
+  }
+.main__aside div{
+    margin: 3rem;
+}
+.aside-div__span{
+    background-color: teal;
+    color: white;
+    border-radius: 5px;
+    font-size: 4rem;
+}
+.main__section{
+    display: inline-block;
+    padding: 10px;
+    position: absolute;
 }
 
 /************************* estilos del footer ************************/
+.footer {
+    padding: 20px;
+    text-align: center;
+    background-color: 555a70;
+    color: white;
+    font-size: 2rem;
+    height: auto;
+  }
