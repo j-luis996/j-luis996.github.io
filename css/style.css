@@ -7,7 +7,14 @@
 html {
     font-size: 62.8%;
 }
+
+body{
+    background: #555a70;
+    margin: 0;
+    padding: 0;
+}
 /* estilos del header */
+
 nav{
     background-color: #13a4a4;
     border-radius: 1rem;
@@ -15,16 +22,16 @@ nav{
     padding: 0;
 }
 nav .main-img{
-    width: 5rem;
+    width: 3vw;
+    min-width: 30px;
     margin-top: 1rem;
     margin-left: 1rem;
 }
 .main-nav{
     list-style: none;
-    padding-left: 80rem;
-    display: inline-block;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
 }
 .main-nav__item{
     display: inline-block;
@@ -44,19 +51,17 @@ nav .main-img{
 }
 .main-nav__item a::after{
     padding-left: 2rem;
-    content: "  ";
+    content: " | ";
 }
 /* estilos del main */
 main{
-    width: 100%;
-    height: 50rem;
+    width: 70%;
+    min-height: 500px;
     border: 0.25rem solid grey;
+    margin: 0 auto;
     padding:  0.2rem 0.35rem;
     font-size: 1.7rem;
+    background-color: rgb(230, 243, 241);
 }
-body{
-    background: #555a70;
-    margin: 0;
-    padding: 0;
-}
+
 /* estilos del footer */
